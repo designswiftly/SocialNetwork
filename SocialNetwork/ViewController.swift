@@ -13,6 +13,8 @@ import QuartzCore
 class ViewController: UIViewController {
 
     var moviePlayer : MPMoviePlayerController!
+    var animationCompleted : Bool = false
+
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -56,19 +58,25 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        UIView.animateWithDuration(3.0, delay: 0, options: .CurveEaseInOut, animations: { () -> Void in
-            //Animamos el logo para arriba
-            let startFrame = self.nameLabel.frame
-            let finalFrame = CGRectMake(startFrame.origin.x, startFrame.origin.y - 100, startFrame.size.width, startFrame.size.height)
+        if (animationCompleted == false) {
             
-            self.nameLabel.frame = finalFrame
-        }, completion: nil)
+            UIView.animateWithDuration(3.0, delay: 0, options: .CurveEaseInOut, animations: { () -> Void in
+                //Animamos el logo para arriba
+                let startFrame = self.nameLabel.frame
+                let finalFrame = CGRectMake(startFrame.origin.x, startFrame.origin.y - 100, startFrame.size.width, startFrame.size.height)
+                
+                self.nameLabel.frame = finalFrame
+                }, completion: nil)
+            
+            UIView.animateWithDuration(1.5, delay: 1.5, usingSpringWithDamping: 3.0, initialSpringVelocity: 3.0, options: .CurveEaseInOut, animations: { () -> Void in
+                
+                //Hacemos que el boton aparezca
+                self.loginButton.alpha = 1.0
+                }, completion: nil)
+            
+            animationCompleted = true
+        }
         
-        UIView.animateWithDuration(1.5, delay: 1.5, usingSpringWithDamping: 3.0, initialSpringVelocity: 3.0, options: .CurveEaseInOut, animations: { () -> Void in
-            
-            //Hacemos que el boton aparezca
-            self.loginButton.alpha = 1.0
-        }, completion: nil)
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

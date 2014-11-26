@@ -16,6 +16,7 @@
 		F5CE3E5B1A25F53300427689 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F5CE3E5A1A25F53300427689 /* video.mp4 */; };
 		F5CE3E5E1A25FAB800427689 /* trench.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5CE3E5D1A25FAB800427689 /* trench.otf */; };
 		F5CE3E601A25FB7500427689 /* BAUER.TTF in Resources */ = {isa = PBXBuildFile; fileRef = F5CE3E5F1A25FB7500427689 /* BAUER.TTF */; };
+		F5CE3EBC1A2623A900427689 /* UserPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE3EBB1A2623A900427689 /* UserPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F5CE3E5A1A25F53300427689 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		F5CE3E5D1A25FAB800427689 /* trench.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = trench.otf; sourceTree = "<group>"; };
 		F5CE3E5F1A25FB7500427689 /* BAUER.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BAUER.TTF; sourceTree = "<group>"; };
+		F5CE3EBB1A2623A900427689 /* UserPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				F5CE3E371A25F35F00427689 /* AppDelegate.swift */,
 				F5CE3E391A25F35F00427689 /* ViewController.swift */,
+				F5CE3EBB1A2623A900427689 /* UserPasswordViewController.swift */,
 				F5CE3E3B1A25F35F00427689 /* Main.storyboard */,
 				F5CE3E3E1A25F35F00427689 /* Images.xcassets */,
 				F5CE3E401A25F35F00427689 /* LaunchScreen.xib */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5CE3E3A1A25F35F00427689 /* ViewController.swift in Sources */,
+				F5CE3EBC1A2623A900427689 /* UserPasswordViewController.swift in Sources */,
 				F5CE3E381A25F35F00427689 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +437,7 @@
 				F5CE3E531A25F35F00427689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5CE3E541A25F35F00427689 /* Build configuration list for PBXNativeTarget "SocialNetworkTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +446,7 @@
 				F5CE3E561A25F35F00427689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
