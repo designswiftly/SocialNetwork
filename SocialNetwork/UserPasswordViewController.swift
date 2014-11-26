@@ -16,12 +16,5 @@ class UserPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //Añadir Blur
-        let blurEffect = UIBlurEffect(style: .Light)
-        let viewWithBlurredBackground = UIVisualEffectView(effect: blurEffect)
-        viewWithBlurredBackground.frame = CGRectMake(0, 0, 320, 568)
-        self.view.insertSubview(viewWithBlurredBackground, atIndex: 0)
     }
-
 }

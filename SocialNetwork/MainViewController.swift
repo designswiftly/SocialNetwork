@@ -10,7 +10,7 @@ import UIKit
 import MediaPlayer
 import QuartzCore
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     var moviePlayer : MPMoviePlayerController!
     var animationCompleted : Bool = false
@@ -76,7 +76,6 @@ class ViewController: UIViewController {
             
             animationCompleted = true
         }
-        
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -88,5 +87,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destinationViewController : UIViewController = segue.destinationViewController as UIViewController
+        destinationViewController.modalTransitionStyle = .CrossDissolve
+    }
 }
 

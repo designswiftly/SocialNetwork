@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F550DBEA1A262DDD00AB4BEC /* AFBlurSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = F550DBE71A262DDD00AB4BEC /* AFBlurSegue.m */; };
+		F550DBEB1A262DDD00AB4BEC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F550DBE91A262DDD00AB4BEC /* UIImage+ImageEffects.m */; };
 		F5CE3E381A25F35F00427689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE3E371A25F35F00427689 /* AppDelegate.swift */; };
-		F5CE3E3A1A25F35F00427689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE3E391A25F35F00427689 /* ViewController.swift */; };
+		F5CE3E3A1A25F35F00427689 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE3E391A25F35F00427689 /* MainViewController.swift */; };
 		F5CE3E3D1A25F35F00427689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CE3E3B1A25F35F00427689 /* Main.storyboard */; };
 		F5CE3E3F1A25F35F00427689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5CE3E3E1A25F35F00427689 /* Images.xcassets */; };
 		F5CE3E421A25F35F00427689 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CE3E401A25F35F00427689 /* LaunchScreen.xib */; };
@@ -30,10 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F550DBE61A262DDD00AB4BEC /* AFBlurSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFBlurSegue.h; path = AFBlurSegue/AFBlurSegue.h; sourceTree = "<group>"; };
+		F550DBE71A262DDD00AB4BEC /* AFBlurSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFBlurSegue.m; path = AFBlurSegue/AFBlurSegue.m; sourceTree = "<group>"; };
+		F550DBE81A262DDD00AB4BEC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "AFBlurSegue/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		F550DBE91A262DDD00AB4BEC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "AFBlurSegue/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		F5A8FD9D1A262C05000DD68F /* SocialNetwork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialNetwork-Bridging-Header.h"; sourceTree = "<group>"; };
 		F5CE3E321A25F35E00427689 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CE3E361A25F35E00427689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5CE3E371A25F35F00427689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5CE3E391A25F35F00427689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5CE3E391A25F35F00427689 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5CE3E3C1A25F35F00427689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5CE3E3E1A25F35F00427689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F5CE3E411A25F35F00427689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -64,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5A8FD9C1A262BF3000DD68F /* BlurSegue */ = {
+			isa = PBXGroup;
+			children = (
+				F550DBE61A262DDD00AB4BEC /* AFBlurSegue.h */,
+				F550DBE71A262DDD00AB4BEC /* AFBlurSegue.m */,
+				F550DBE81A262DDD00AB4BEC /* UIImage+ImageEffects.h */,
+				F550DBE91A262DDD00AB4BEC /* UIImage+ImageEffects.m */,
+			);
+			name = BlurSegue;
+			sourceTree = "<group>";
+		};
 		F5CE3E291A25F35E00427689 = {
 			isa = PBXGroup;
 			children = (
@@ -86,11 +104,13 @@
 			isa = PBXGroup;
 			children = (
 				F5CE3E371A25F35F00427689 /* AppDelegate.swift */,
-				F5CE3E391A25F35F00427689 /* ViewController.swift */,
+				F5CE3E391A25F35F00427689 /* MainViewController.swift */,
 				F5CE3EBB1A2623A900427689 /* UserPasswordViewController.swift */,
 				F5CE3E3B1A25F35F00427689 /* Main.storyboard */,
-				F5CE3E3E1A25F35F00427689 /* Images.xcassets */,
 				F5CE3E401A25F35F00427689 /* LaunchScreen.xib */,
+				F5CE3E3E1A25F35F00427689 /* Images.xcassets */,
+				F5A8FD9D1A262C05000DD68F /* SocialNetwork-Bridging-Header.h */,
+				F5A8FD9C1A262BF3000DD68F /* BlurSegue */,
 				F5CE3E5C1A25FAAB00427689 /* Fonts */,
 				F5CE3E591A25F53300427689 /* Videos */,
 				F5CE3E351A25F35E00427689 /* Supporting Files */,
@@ -243,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5CE3E3A1A25F35F00427689 /* ViewController.swift in Sources */,
+				F5CE3E3A1A25F35F00427689 /* MainViewController.swift in Sources */,
+				F550DBEB1A262DDD00AB4BEC /* UIImage+ImageEffects.m in Sources */,
+				F550DBEA1A262DDD00AB4BEC /* AFBlurSegue.m in Sources */,
 				F5CE3EBC1A2623A900427689 /* UserPasswordViewController.swift in Sources */,
 				F5CE3E381A25F35F00427689 /* AppDelegate.swift in Sources */,
 			);
@@ -368,9 +390,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SocialNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialNetwork/SocialNetwork-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -378,9 +403,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SocialNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialNetwork/SocialNetwork-Bridging-Header.h";
 			};
 			name = Release;
 		};
