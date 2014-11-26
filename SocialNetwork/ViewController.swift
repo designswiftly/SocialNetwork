@@ -37,6 +37,20 @@ class ViewController: UIViewController {
         //Preparar Botón
         nameLabel.font = UIFont(name: "BAUER", size: 40.0);
         nameLabel.textColor = UIColor.whiteColor()
+        
+        //Añadir Parallax
+        let buttonInterpolationX = UIInterpolatingMotionEffect(keyPath: "center.x", type: .TiltAlongHorizontalAxis)
+        buttonInterpolationX.minimumRelativeValue = -10;
+        buttonInterpolationX.maximumRelativeValue = 10;
+        
+        let buttonInterpolationY = UIInterpolatingMotionEffect(keyPath: "center.y", type: .TiltAlongVerticalAxis)
+        buttonInterpolationY.minimumRelativeValue = -10;
+        buttonInterpolationY.maximumRelativeValue = 10;
+
+        loginButton.addMotionEffect(buttonInterpolationX)
+        loginButton.addMotionEffect(buttonInterpolationY)
+        nameLabel.addMotionEffect(buttonInterpolationX)
+        nameLabel.addMotionEffect(buttonInterpolationY)
     }
 
     override func viewDidAppear(animated: Bool) {
