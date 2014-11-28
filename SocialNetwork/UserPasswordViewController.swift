@@ -29,5 +29,7 @@ class UserPasswordViewController: UIViewController {
         
         //Mostrar el teclado
         self.emailTextField.becomeFirstResponder()
+        self.emailTextField.autocorrectionType = .No;
+
     }
 }
